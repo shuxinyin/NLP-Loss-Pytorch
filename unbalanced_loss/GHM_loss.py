@@ -1,9 +1,16 @@
+#  some code reforenced from  https://github.com/DHPO/GHM_Loss.pytorch
+
 import torch
 from torch import nn
 import torch.nn.functional as F
 
+
 class GHM_Loss(nn.Module):
-    def __init__(self, bins, alpha):
+    def __init__(self, bins=10, alpha=0.5):
+        '''
+        bins: split to n bins
+        alpha: hyper-parameter
+        '''
         super(GHM_Loss, self).__init__()
         self._bins = bins
         self._alpha = alpha
@@ -45,6 +52,10 @@ class GHM_Loss(nn.Module):
 
 
 class GHMC_Loss(GHM_Loss):
+    '''
+        GHM_Loss for classification
+    '''
+
     def __init__(self, bins, alpha):
         super(GHMC_Loss, self).__init__(bins, alpha)
 
@@ -56,6 +67,10 @@ class GHMC_Loss(GHM_Loss):
 
 
 class GHMR_Loss(GHM_Loss):
+    '''
+        GHM_Loss for regression
+    '''
+
     def __init__(self, bins, alpha, mu):
         super(GHMR_Loss, self).__init__(bins, alpha)
         self._mu = mu

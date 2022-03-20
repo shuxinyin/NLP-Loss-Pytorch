@@ -2,11 +2,12 @@
 
 Implementation of some unbalanced loss for NLP task like focal_loss, dice_loss, DSC Loss, GHM Loss et.al
 ### Summary
-Here is a loss implementation repository include unbalanced loss
+Here is a loss implementation repository included unbalanced loss
 
 | Loss Name | paper | Notes |
 | :-----:| :----: | :----: |
-| Focal Loss | [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002) |  |
+| Weighted CE Loss | [UNet Architectures in Multiplanar Volumetric Segmentation -- Validated on Three Knee MRI Cohorts](https://arxiv.org/abs/1708.02002) |  |
+| Focal Loss | [Focal Loss for Dense Object Detection](https://arxiv.org/abs/2203.08194) |  |
 | Dice Loss | [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation](https://arxiv.org/abs/1606.04797) |  |
 | DSC Loss | [Dice Loss for Data-imbalanced NLP Tasks](https://arxiv.org/pdf/1911.02855.pdf) |  |
 | GHM Loss | [Gradient Harmonized Single-stage Detector](https://www.aaai.org/ojs/index.php/AAAI/article/download/4877/4750) |  |
