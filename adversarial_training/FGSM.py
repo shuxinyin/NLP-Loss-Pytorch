@@ -33,7 +33,7 @@ class FGSM:
 
         return outputs, loss
 
-    def attack_param(self, name, param):
+    def attack_param(self, param):
         # r_at = epsilon * sign(grad)
         r_at = self.epsilon * np.sign(param.grad)
         param.data.add_(r_at)

@@ -52,7 +52,7 @@ class FGM:
                 param.data = self.emb_backup[name]
         self.emb_backup = {}
 
-    def _add_disturbance(self, name, param):
+    def _add_disturbance(self, param):
         ''' add disturbance
         '''
         norm = torch.norm(param.grad)
