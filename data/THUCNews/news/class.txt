@@ -1,0 +1,10 @@
+finance 0
+realty  1
+stocks  2
+education   3
+science
+society 5
+politics    6
+sports  7
+game    8
+entertainment   9
