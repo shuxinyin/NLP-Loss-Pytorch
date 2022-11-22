@@ -46,7 +46,7 @@ you can find more details in adversarial_training/README.md
 |        FreeLB        |            [Free Large Batch Adversarial Training](https://arxiv.org/pdf/1909.11764v5.pdf)            |       |
 
 #### How to use?  
-You can find a simple demo for bert classification in test_bert.py.  
+**You can find a simple demo for bert classification in test_bert.py.**  
 
 Here is a simple demo of usage:  
 You just need to rewrite train function according to input for your model in file PGD.py, then you can use adversarial training like below.  
@@ -65,7 +65,11 @@ optimizer = transformers.AdamW(model.parameters(), lr=0.001)
 outputs, loss = AT_Model.train_bert(token, segment, mask, label, optimizer)
 ```
 
-#### Adversarial Training Results Compare
+#### Adversarial Training Results
+here are some results tested on THNews classification task based on bert.   
+you can find run the code as below:  
+> cd scripts  
+> sh run_at.sh
 
 |  Adversarial Training  | Time Cost(s/epoch ) | best_acc |
 |:----------------------:|:-------------------:|:--------:|

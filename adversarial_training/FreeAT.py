@@ -2,7 +2,6 @@ import torch
 import torch.nn.functional as F
 
 
-
 class FreeAT:
     def __init__(self, model, epsilon=0.8, k=3, emb_name='embedding.'):
         self.model = model
